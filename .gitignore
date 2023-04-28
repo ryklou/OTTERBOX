@@ -1,0 +1,17 @@
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example.gitignore files : https://github.com/github/gitignore
+_notes/
+/bower_components/
+/node_modules/
+/xampp/xampp.phpproj
+/xampp/.vs/phptasks.json
+/xampp/.vs/
+/xampp/inc/webfonts/
+/xampp/inc/svgs/
+/xampp/inc/sprites/
+/xampp/inc/scss/
+/xampp/inc/metadata/
+/xampp/inc/less/
+/xampp/inc/dist/
+/PHPXamppWebUI/

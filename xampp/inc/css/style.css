@@ -1,0 +1,123 @@
+.container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.container { 
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  grid-template-rows: 0.3fr 0.9fr 2fr;
+  grid-auto-columns: 1fr;
+  gap: 15px 15px;
+  grid-auto-flow: row;
+}
+
+.TitleHead {  display: grid;
+  grid-template-columns: 0.15fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "LogoImage AppTitle";
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.LogoImage { grid-area: LogoImage; }
+
+.AppTitle { grid-area: AppTitle; }
+
+.ButtonGroup { grid-area: 2 / 2 / 3 / 3; }
+
+.LogWell { grid-area: 3 / 1 / 4 / 3; }
+
+.ModuleList {  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr 1.6fr 0.15fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.Modules { grid-area: 1 / 1 / 6 / 2; }
+
+.PID { grid-area: 1 / 2 / 6 / 3; }
+
+.Ports { grid-area: 1 / 3 / 6 / 4; }
+
+.ActionCenter { grid-area: 1 / 4 / 6 / 5; }
+
+.Apache { grid-area: 1 / 1 / 2 / 5; }
+
+.MySQL {
+	grid-area: 2 / 1 / 3 / 5;
+}
+
+.FileZilla { grid-area: 3 / 1 / 4 / 5; }
+
+.Mercury { grid-area: 4 / 1 / 5 / 5; }
+
+.Tomcat { grid-area: 5 / 1 / 6 / 5; }
+
+.ApacheLogo { grid-area: 1 / 5 / 2 / 6; }
+
+.MySQLLogo { grid-area: 2 / 5 / 3 / 6; }
+
+.FileZillaLogo { grid-area: 3 / 5 / 4 / 6; }
+
+.MercuryLogo { grid-area: 4 / 5 / 5 / 6; }
+
+.TomcatLogo { grid-area: 5 / 5 / 6 / 6; }
+
+.aside {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Config"
+    "Netstat"
+    "shell"
+    "explorer"
+    "services"
+    "help"
+    "quit";
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.Config { grid-area: Config; }
+
+.Netstat { grid-area: Netstat; }
+
+.shell { grid-area: shell; }
+
+.explorer { grid-area: explorer; }
+
+.services { grid-area: services; }
+
+.help { grid-area: help; }
+
+.quit { grid-area: quit; }
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+
+
+.container *:after {
+  content:attr();
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS Document */
